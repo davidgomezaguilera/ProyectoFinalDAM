@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+
+    <!-- Mis String -->
+    <string name="inicio">Inicio</string>
+    <string name="modoguia">Cambiar a guía</string>
+    <string name="modoturista">Cambiar a turista</string>
+    <string name="volver">Volver</string>
+    <string name="provincia">Provincia</string>
+    <string name="cerrarsesion">Cerrar Sesion</string>
+    <string name="titulotitulo">¿Cómo vas a querer llamar a tu anuncio?</string>
+    <string name="titulo">Título</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="eligetuprovincia">Elige tu provincia</string>
+    <string name="buscatuprovincia">Busca tu provincia</string>
+    <string name="eligetuciudad">Elige tu ciudad</string>
+    <string name="buscatuciudad">Busca tu ciudad</string>
+    <string name="tintereses">Intereses</string>
+    <string name="bintereses">Busca tus intereses</string>
+
+    <!-- Pantalla buscar anuncio -->
+    <string name="mostrandoProv">Mostrándo anúncios de la provincia: </string>
+    <string name="mostrandoCiu">Mostrándo anúncios de la ciudad: </string>
+    <string name="porciudad">Ciudad</string>
+    <string name="porprovincia">Provincia</string>
+    <string name="nuevapropuesta">Nueva propuesta</string>
+    <string name="dia">Día</string>
+    <string name="cliente">Nombre:</string>
+    <string name="nacompanantes">Nº acompañantes</string>
+    <string name="fechas">Fecha del viaje</string>
+    <string name="detalle">Detalles</string>
+    <string name="aclaracion">Algo más que añadir...</string>
+    <string name="enviar">Enviar propuesta</string>
+    
+    <!-- Pantalla mis propuestas turista -->
+    <string name="nombreguia">Nombre guía</string>
+    <string name="nombresacompa">Acompañantes</string>
+    
+    <!-- pantalla mis propuestas guia -->
+    <string name="estado">Estado de tu propuesta:</string>
+
+    <!-- pantalla mis anuncios -->
+    <string name="tienes">Tienes</string>
+    <string name="npropuestas">propuestas</string>
+    <string name="npropuesta">propuesta</string>
+
+    <!-- Pantalla de login -->
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="registrase">Registrase</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="eresGuia">¿Eres guía?</string>
+    <string name="pswdOlvidado">¿Has olvidado tu contraseña?</string>
+
+    <!-- Pantalla registro -->
+    <string name="nuevousuarioturista">Nuevo Turista</string>
+    <string name="nuevousuarioguia">Nuevo Guia</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="confirmarcontrasena">Confima tu contraseña</string>
+
+    <!-- Pantalla turista -->
+    <string name="misViajes">Mis viajes </string>
+    <string name="dejahuella">Deja huella</string>
+    <string name="dejatuhuella">Deja tu propia huella</string>
+    <string name="publicaranuncio">Publicar anuncio</string>
+    <string name="explorahuella">Explora las huellas</string>
+    <string name="misanunicios">Mis anuncios</string>
+    <string name="descripcionhuella">Deja tu huella para que otros turistas puedan verla o explora las huellas que otros turistas han dejado</string>
+
+    <!-- Pantalla de huellas -->
+    <string name="titulofragmen">Huellas</string>
+
+    <!-- Pantalla Guia -->
+    <string name="tusviajescontract">Viajes que organizas</string>
+    <string name="ultimos">Nuevos anuncios</string>
+    <string name="buscaranuncios">Buscar anuncios</string>
+    <string name="propuestasenviadas">Propuestas enviadas</string>
+    <string name="viajescontratados">Viajes contratados</string>
+a
+    <!-- Pantalla publicar anuncio -->
+    <string name="selecionafechas">Selecciona las fechas</string>
+    <string name="publicaranuncion">Publicar anuncio</string>
+    <string name="visitarciudad">¿Que ciudad quieres visitar?</string>
+    <string name="acompanantes">¿Te acompañara alguien?</string>
+    <string name="introduceemail">Introduce su email</string>
+    <string name="configuraviaje">Configura tu viaje</string>
+    <string name="acompanante">Acompañantes </string>
+    <string name="titulopublicacion">Titulo</string>
+    <string name="intereses">Selecciona el tipo de interes</string>
+
+    <!-- String dialogo MisAnuncios_anuncio-->
+    <string name="titulodialog">¿Aceptar propuesta?</string>
+    <string name="subdialogo">Si aceptas la propuesta, el guía podrá ponerse en contacto contigo</string>
+    <string name="btn1">Aceptar</string>
+    <string name="btn2">Cancelar</string>
+
+    <!-- Strings del desplegable de las ciudade sy provincias -->
+    <string name="filterdialog_back">Atras</string>
+    <string name="filterdialog_clear">Limpiar</string>
+
+    <!-- String del chatemisor -->
+    <string name="titulolayout">Chat viaje:</string>
+
+    <!-- String cuando no hay que mostrar-->
+    <string name="nadaquemostrarpropuesta">Todavia no has mandado ninguna propuesta, no seas tímido envía tu mejor ruta.</string>
+    <string name="nadaquemostrarviajesturista">Todavia no tienes ningún viaje contratado, acepta alguna propuesta o crea algún anuncio</string>
+    <string name="nadaquemostrarviajesguia">Todavia no tienes ningún viaje contratado. </string>
+    <string name="nadaquemostraranuncios">Todavia no tienes ningún anuncio publicado. ¿Dónde te gustaría viajar? </string>
+    <string name="nadaquemostrarbuscar">¿Dónde estarán los anuncios? Prueba otra busqueda :(</string>
+    <string name="nadaquemostrarpropuestasenviadas">Tu viaje es maravillos, seguro que alguien tiene una idea genial!!</string>
+
+    <!-- Preference Titles -->
+    <string name="title_activity_preferencias">Settings</string>
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="cast">Cast</string>
+
+    <!-- matisse-->
+    <string name="permission_request_denied">Permiso denegado</string>
+    <string name="error_gif">x or y debe ser al menos %1$dpx y el tamaño del archivo no debe ser mayor que %2$sM</string>
+
+
+</resources>

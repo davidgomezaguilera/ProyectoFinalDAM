@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tourguide.ui.home.HomeFragment"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_publicar"
+            app:destination="@id/nav_publicar" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_buscar"
+            app:destination="@id/nav_buscar" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_publicar"
+        android:name="com.example.tourguide.ui.publicaranuncio.PublicarAnuncio"
+        android:label="@string/publicaranuncio"
+        tools:layout="@layout/publicar_anuncio_fragment">
+        <action
+            android:id="@+id/action_nav_publicar_to_nav_misanuncios"
+            app:destination="@id/nav_misanuncios" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_misanuncios"
+        android:name="com.example.tourguide.ui.misanuncios.MisAnuncios"
+        android:label="@string/misanunicios"
+        tools:layout="@layout/mis_anuncios_fragment">
+        <action
+            android:id="@+id/action_nav_misanuncios_to_nav_misviajes_anuncio"
+            app:destination="@id/nav_misanuncios_anuncio" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_misviajes"
+        android:name="com.example.tourguide.ui.misviajes.MisViajes"
+        android:label="@string/misViajes"
+        tools:layout="@layout/mis_viajes_fragment"/>
+    <fragment
+        android:id="@+id/nav_buscar"
+        android:name="com.example.tourguide.ui.buscaranuncio.BuscarAnuncios"
+        android:label="@string/buscaranuncios"
+        tools:layout="@layout/buscar_anuncios_fragment">
+        <action
+            android:id="@+id/action_nav_buscar_to_nav_buscaranuncio_popuesta"
+            app:destination="@id/nav_buscaranuncio_popuesta" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_propuestasenviadas"
+        android:name="com.example.tourguide.ui.propuestasenviadas.PropuestasEnviadas"
+        android:label="@string/propuestasenviadas"
+        tools:layout="@layout/propuestas_enviadas_fragment">
+        <action
+            android:id="@+id/action_nav_propuestasenviadas_to_nav_chat"
+            app:destination="@id/nav_chat" />
+        <action
+            android:id="@+id/action_nav_propuestasenviadas_to_nav_misviajes"
+            app:destination="@id/nav_misviajes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_misanuncios_anuncio"
+        android:name="com.example.tourguide.ui.misanuncios.MisAnuncios_Anuncio"
+        android:label="@string/misanunicios"
+        tools:layout="@layout/mis_anuncios_anuncio_fragment">
+        <action
+            android:id="@+id/action_nav_misanuncios_anuncio_to_nav_misanuncios_propuesta"
+            app:destination="@id/nav_misanuncios_propuesta" />
+        <action
+            android:id="@+id/action_nav_misanuncios_anuncio_to_nav_misviajes"
+            app:destination="@id/nav_misviajes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_misanuncios_propuesta"
+        android:name="com.example.tourguide.ui.misanuncios.MisAnuncios_Propuestas"
+        android:label="@string/propuestasenviadas"
+        tools:layout="@layout/mis_anuncios_propuestas_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_buscaranuncio_popuesta"
+        android:name="com.example.tourguide.ui.buscaranuncio.BuscarAnuncio_Propuesta"
+        android:label="@string/nuevapropuesta"
+        tools:layout="@layout/buscar_anuncio_propuesta_fragment">
+
+        <action
+            android:id="@+id/action_nav_buscaranuncio_popuesta_to_nav_propuestasenviadas"
+            app:destination="@id/nav_propuestasenviadas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.tourguide.ui.Chat.Chat"
+        android:label="@string/titulolayout"
+        tools:layout="@layout/chat_fragment">
+    </fragment>
+
+    <fragment
+    android:id="@+id/nav_viajescontratados"
+    android:name="com.example.tourguide.ui.misviajes.MisViajes"
+    android:label="@string/misViajes"
+    tools:layout="@layout/mis_viajes_fragment">
+
+    </fragment>
+
+</navigation>

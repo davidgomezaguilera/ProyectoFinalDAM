@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="nombre"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="apellidos"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="ciudad"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="fotourl"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="email"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="token"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="provincia"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="propuesta"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+</PreferenceScreen>

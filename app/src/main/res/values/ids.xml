@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aqui se añaden ids -->
+    <item name="boton0" type="id"/>
+    <item name="boton1" type="id"/>
+    <item name="boton2" type="id"/>
+    <item name="boton3" type="id"/>
+    <item name="boton4" type="id"/>
+    <item name="boton5" type="id"/>
+    <item name="boton6" type="id"/>
+    <item name="boton7" type="id"/>
+    <item name="boton8" type="id"/>
+    <item name="boton9" type="id"/>
+    <item name="boton10" type="id"/>
+    <item name="boton11" type="id"/>
+    <item name="boton12" type="id"/>
+    <item name="boton13" type="id"/>
+    <item name="boton14" type="id"/>
+    <item name="boton15" type="id"/>
+    <item name="boton16" type="id"/>
+    <item name="boton17" type="id"/>
+    <item name="boton18" type="id"/>
+    <item name="boton19" type="id"/>
+    <item name="boton20" type="id"/>
+    <item name="boton21" type="id"/>
+    <item name="boton22" type="id"/>
+    <item name="boton23" type="id"/>
+    <item name="boton24" type="id"/>
+    <item name="boton25" type="id"/>
+    <item name="boton26" type="id"/>
+
+</resources>

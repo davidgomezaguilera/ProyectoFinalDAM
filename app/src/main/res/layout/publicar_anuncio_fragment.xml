@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/publicaranuncio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.publicaranuncio.PublicarAnuncio">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="bo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bTitulo"
+            style="bo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bordebotonesturista"
+            android:text="@string/titulopublicacion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <Button
+            android:id="@+id/bCiudad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordebotonesturista"
+            android:text="@string/visitarciudad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bTitulo"
+            app:layout_constraintStart_toStartOf="@+id/bTitulo"
+            app:layout_constraintTop_toBottomOf="@+id/bTitulo"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <Button
+            android:id="@+id/bFechaPublicar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordebotonesturista"
+            android:text="@string/selecionafechas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bCiudad"
+            app:layout_constraintStart_toStartOf="@+id/bCiudad"
+            app:layout_constraintTop_toBottomOf="@+id/bCiudad"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <Button
+            android:id="@+id/bInteres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordebotonesturista"
+            android:text="@string/intereses"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bFechaPublicar"
+            app:layout_constraintStart_toStartOf="@+id/bFechaPublicar"
+            app:layout_constraintTop_toBottomOf="@+id/bFechaPublicar"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textosTitulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/configuraviaje"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/textos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acompanantes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bInteres"
+            app:layout_constraintStart_toStartOf="@+id/bInteres"
+            app:layout_constraintTop_toBottomOf="@+id/bInteres"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/banadir"
+            style="@style/wrapping_button"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="md"
+            app:fontAwesomeIcon="fa_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:layout_constraintVertical_bias="0.04"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/beliminar"
+            style="@style/wrapping_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="md"
+            app:fontAwesomeIcon="fa_minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toEndOf="@+id/banadir"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:layout_constraintVertical_bias="0.04"
+            app:roundedCorners="true" />
+
+        <LinearLayout
+            android:id="@+id/layoutAcompanante"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bFechaPublicar"
+            app:layout_constraintStart_toStartOf="@+id/bFechaPublicar"
+            app:layout_constraintTop_toBottomOf="@+id/banadir"
+            app:layout_constraintVertical_bias="0.04">
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/mt1"
+                style="@style/textos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mtf_image="@drawable/email"
+                app:mtf_labelColor="#666">
+
+                <EditText
+                    android:id="@+id/etacompanante1"
+                    style="@style/textos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/introduceemail"
+                    android:inputType="textAutoComplete"
+                    android:textColor="#333"
+                    android:textSize="15sp" />
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/mt2"
+                style="@style/textos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mtf_image="@drawable/email"
+                app:mtf_labelColor="#666">
+
+                <EditText
+                    android:id="@+id/etacompanante2"
+                    style="@style/textos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/introduceemail"
+                    android:inputType="textAutoComplete"
+                    android:textColor="#333"
+                    android:textSize="15sp" />
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/mt3"
+                style="@style/textos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mtf_image="@drawable/email"
+                app:mtf_labelColor="#666">
+
+                <EditText
+                    android:id="@+id/etacompanante3"
+                    style="@style/textos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/introduceemail"
+                    android:inputType="textAutoComplete"
+                    android:textColor="#333"
+                    android:textSize="15sp" />
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bPublicar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordebotonesturista"
+            android:text="@string/publicaranuncion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bFechaPublicar"
+            app:layout_constraintStart_toStartOf="@+id/bFechaPublicar"
+            app:layout_constraintTop_toBottomOf="@+id/layoutAcompanante" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

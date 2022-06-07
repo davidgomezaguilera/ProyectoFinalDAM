@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/textos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bRegistrarseLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordebotones"
+            android:text="@string/registrase"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bIniciarSesion"
+            app:layout_constraintStart_toStartOf="@+id/bIniciarSesion"
+            app:layout_constraintTop_toBottomOf="@+id/bPswdOlvidado"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <Button
+            android:id="@+id/bPswdOlvidado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordebotones"
+            android:text="@string/pswdOlvidado"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bIniciarSesion"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/bIniciarSesion"
+            app:layout_constraintTop_toBottomOf="@+id/swEresGuia"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <Switch
+            android:id="@+id/swEresGuia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eresGuia"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bIniciarSesion"
+            app:layout_constraintStart_toStartOf="@+id/bIniciarSesion"
+            app:layout_constraintTop_toBottomOf="@+id/bIniciarSesion"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Button
+            android:id="@+id/bIniciarSesion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordebotones"
+            android:text="@string/iniciarSesion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextField2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/materialTextField2"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextField2"
+            app:layout_constraintVertical_bias="0.037" />
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/materialTextField2"
+            style="@style/textos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextField"
+            app:layout_constraintStart_toStartOf="@+id/materialTextField"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextField"
+            app:layout_constraintVertical_bias="0"
+            app:mtf_image="@drawable/pswd"
+            app:mtf_labelColor="#666">
+
+            <EditText
+                android:id="@+id/tfPswd"
+                style="@style/textos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/contrasena"
+                android:inputType="textPassword"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/materialTextField"
+            style="@style/textos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.23000002"
+            app:mtf_image="@drawable/email"
+            app:mtf_labelColor="#666">
+
+            <EditText
+                android:id="@+id/tfEmail"
+                style="@style/textos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <ImageView
+            android:id="@+id/imlogo"
+            android:layout_width="0dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/login_tlf" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

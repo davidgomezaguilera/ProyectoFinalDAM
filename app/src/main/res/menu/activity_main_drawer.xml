@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" android:id="@+id/grupoturista">
+        <item
+            android:id="@+id/nav_publicar"
+            android:icon="@drawable/publicaranuncio"
+            android:title="@string/publicaranuncio" />
+        <item
+            android:id="@+id/nav_misanuncios"
+            android:icon="@drawable/misanuncios"
+            android:title="@string/misanunicios" />
+        <item
+            android:id="@+id/nav_misviajes"
+            android:icon="@drawable/misviajes"
+            android:title="@string/misViajes" />
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/grupoguia">
+        <item
+            android:id="@+id/nav_buscar"
+            android:icon="@drawable/buscaranuncios"
+            android:title="@string/buscaranuncios" />
+        <item
+            android:id="@+id/nav_propuestasenviadas"
+            android:icon="@drawable/enviar"
+            android:title="@string/propuestasenviadas" />
+        <item
+            android:id="@+id/nav_viajescontratados"
+            android:icon="@drawable/misviajes"
+            android:title="@string/viajescontratados" />
+    </group>
+
+    <item
+        android:id="@+id/sw"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="always" />
+</menu>
